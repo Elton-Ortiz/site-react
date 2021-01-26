@@ -1,0 +1,55 @@
+.proj-cont *{
+    mask-image: none;
+}
+.proj-cont{
+    content:" ";
+    background-color: rgb(161, 161, 67);
+    opacity: .8;
+    position: fixed;
+    display: block;
+    height: 50px;
+    width:300px;
+    top: 56px;
+    left:-280px;
+    z-index: 99;
+    transition:all 1s ease-in-out;
+}
+.proj-cont.clicked{
+    background-color: rgb(27, 27, 27);
+    color: rgb(161, 161, 67);
+    opacity: .95;
+    left: 0;
+    height: 400px;
+    z-index: 99;
+}
+.proj-cont div{
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    top: 0;
+    z-index: 99;
+}
+.proj-cont h1{
+    color: rgb(161, 161, 67);
+    text-shadow: 1px 1px 10px;
+    margin: 25px 0;
+}
+
+.proj-cont ul{
+    display: flex;
+    flex-direction: column;
+}
+.proj-cont a{
+    display: block;
+    color: rgb(161, 161, 67);
+    font-size: 25px;
+    border-bottom: rgb(161, 161, 67) solid 1px;
+    height: 50px;
+    text-align: left;
+}
+.proj-cont p{
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}

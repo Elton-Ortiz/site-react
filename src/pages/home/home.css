@@ -1,0 +1,96 @@
+.container{
+    background-color:#282c34;
+    margin: 0;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+}
+.container div:first-child{
+    width: 100%;
+    margin: 45px 0 0 0;
+}
+h1{
+    margin: 0 auto ;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #61dafb;
+    font-size: 30px; 
+}
+p{
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin: 0 auto;
+    max-width: 12em;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+}
+.container-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    box-align: center;
+    padding: 40px 0 0 0;
+}
+.container-button a{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    height: auto;
+    margin: 0 5px;
+}
+.container-button a:first-child{
+    background-color: #61dafb;
+    color:#000;
+    padding: 10px 25px;
+}
+.container-button a:nth-child(2){
+    color: #61dafb;
+}
+@media(min-width:600px){
+    h1{
+        font-size: 45px;
+    }
+    p{
+        color: #FFF;
+        font-size: 24px;
+        display: block;
+       margin: 0 15px;
+       max-width: 100%;
+    }
+    .container{
+        margin: 0;
+        height: auto;
+       padding: 60px 0 70px 0;
+    }
+    .container div:first-child{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media(min-width:1280px){
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 30px;
+       margin: 5px 10px;
+       max-width: 100%;
+    }
+    .container-button{
+        padding: 65px 0 0 0;
+    }
+    .container-button a{
+        font-size: 20px;
+    }
+    .container-button a:first-child{
+        padding: 15px 25px;
+    }
+    .container{
+       padding: 95px 0 85px 0;
+    }
+   
+  
+}
