@@ -20,7 +20,9 @@
     padding:  10px 15px  0 0;
     border: none;
 }
-.proj-cont .close a {
+.proj-cont .close button {
+    background: none;
+    color: rgb(161, 161, 67);
     display: inline;
     font-size: 30px;
     font-weight: 500;

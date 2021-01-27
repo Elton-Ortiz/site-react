@@ -23,9 +23,9 @@ function PageAbout() {
         <div className={"about " + clicked}  onClick={()=>{toggle()}} >
              <div style={{display:display}} >
                  <span className="close"  >
-                     <a  href="#"
+                     <button  href="#"
                      onClick={()=>{toggle()}}
-                     >X</a></span>
+                     >X</button></span>
         <h1>About</h1>
         <main>
         <p>Esta página foi feita com o intuito, de ser uma cópia da página <a href="https://pt-br.reactjs.org/">reactjs.org</a> ela ainda está em construção!</p>

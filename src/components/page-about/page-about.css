@@ -34,7 +34,9 @@
     text-align: right;
     padding:  10px 15px  0 0;
 }
-.about .close a {
+.about .close button {
+    background: none;
+    color: rgb(133, 203, 255);
     display: inline;
     font-size: 30px;
     font-weight: 500;

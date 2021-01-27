@@ -32,9 +32,9 @@ function ProjectsMenu() {
         <div className={"proj-cont " + clicked}  onClick={()=>{toggle()}} >
              <div style={{display:display}} >
              <span className="close"  >
-                     <a  href="#"
+                     <button href="#"
                      onClick={()=>{toggle()}}
-                     >X</a></span>
+                     >X</button></span>
         <h1>Projects</h1>
         <nav>
             <ul>
