@@ -10,9 +10,21 @@
     height: 50px;
     width:300px;
     top: 56px;
-    left:-280px;
-    z-index: 99;
+    left:-250px;
+    z-index: 3;
     transition:all 1s ease-in-out;
+}
+.proj-cont .close{
+    display: block;
+    text-align: right;
+    padding:  10px 15px  0 0;
+    border: none;
+}
+.proj-cont .close a {
+    display: inline;
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
 }
 .proj-cont.clicked{
     background-color: rgb(27, 27, 27);
@@ -30,6 +42,7 @@
     z-index: 99;
 }
 .proj-cont h1{
+    font-size: 30px;
     color: rgb(161, 161, 67);
     text-shadow: 1px 1px 10px;
     margin: 25px 0;

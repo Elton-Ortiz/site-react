@@ -1,0 +1,83 @@
+.about *{
+    mask-image: none;
+}
+.about{
+    content:" ";
+    background-color:rgb(133, 203, 255);
+    opacity: .8;
+    position: fixed;
+    display: block;
+    height: 50px;
+    width:300px;
+    top: 110px;
+    left:-250px;
+    z-index: 2;
+    transition:all 1s ease-in-out;
+}
+.about.clicked{
+    background-color: rgb(27, 27, 27);
+    color: rgb(133, 203, 255);
+    opacity: .95;
+    left: 0;
+    height: 400px;
+    z-index: 99;
+}
+.about div{
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    top: 0;
+    z-index: 99;
+}
+.about .close{
+    display: block;
+    text-align: right;
+    padding:  10px 15px  0 0;
+}
+.about .close a {
+    display: inline;
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
+}
+.about h1{
+    font-size: 30px;
+    color: rgb(133, 203, 255);
+    text-shadow: 1px 1px 10px;
+    margin:0 0 10px 0;
+}
+.about a{
+    display: inline;
+    color: rgb(133, 203, 255);
+}
+.about main{
+    width:calc(100% - 40px);
+    text-align: center;
+    padding: 0 20px;
+}
+.about p{
+    max-width: 100%;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 20px;
+}
+.about ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+}
+.about li{
+    font-size: 18px;
+    padding: 10px;
+}
+.about .repository{
+    display: inline-block;
+    font-size: 20px;
+    font-weight:500;
+    color: #fff;
+    background-color: rgb(133, 203, 255); 
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
