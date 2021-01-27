@@ -42,6 +42,7 @@
     z-index: 99;
 }
 .proj-cont h1{
+    font-size: 30px;
     color: rgb(161, 161, 67);
     text-shadow: 1px 1px 10px;
     margin: 25px 0;
