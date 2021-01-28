@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo192.png';
+import lupa from '../../assets/lupa.png'
 
 import './header.css';
 
@@ -19,8 +20,11 @@ function Header() {
                     <Link><li>Comunidade</li></Link>
                 </ul>
             </nav>
+            <div className="right-cont" >
+
             <form>
                 <span className="lupa">
+                    {/* <img alt="lupa" src={lupa}></img> */}
                 <input type="search"placeholder="Buscar docs" />
                 </span>
             </form>
@@ -31,6 +35,10 @@ function Header() {
            <strong style={{color: "#fff"}}>%</strong>
            <span className="languages">Languages</span>
             </Link> 
+            <Link>
+           <span className="github">GitHub</span>
+            </Link> 
+            </div>
         </header>
     )
 }

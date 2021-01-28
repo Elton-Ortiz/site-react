@@ -22,7 +22,6 @@ a{
 }
 .logo{
     margin: 0 10px 0 0;
-   flex-basis: calc( 100% / 6 );
 }
 img{
     width: 20px;
@@ -40,7 +39,7 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
 }
 
 li{
@@ -48,46 +47,48 @@ li{
     list-style: none;
     text-align: center;
 }
+.right-cont{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
 form{
     display: flex;
     align-items: center;
     padding:0;
     margin: 0;
 }
-input{
-   
-    height: 30px;
-    width: 20px;
-    margin: 5px 0;
-    background-color:  #373940;
+.lupa {
+    display: block;
+    margin: 0 0 0 10px;
+    direction: rtl;
+}
+.lupa input{
+    margin: 0;
     border: none;
     border-radius: .25rem;
-    background-color: transparent;
-    padding: 0 0 0 20px;
-}
-input:focus{
+    color: #fff;
     height: 30px;
-    width: calc(8rem + 20px);
-    padding: 0 10px;
-    background-color:  #373940;
-    transition: width .2s ease-in;
-
-}
-input::placeholder{
-    font-size: 1rem;
-    color:#8f9194 ;
-}
-.lupa{
-    direction: rtl;
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 0;
     width: 20px;
-    height: 20px;
-    background-image: url('../../assets/lupa.png');
-    background-position: center;
-    background-size: cover;
+    background-image: url('../../assets/lupa.svg');
+    background-color:transparent;
+    background-position-y: center;
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 20px;
+    transition: width .5s ease-in-out;
 }
+.lupa input:focus{
+    width: 120px;
+    background-color: none;
+    background-color: #32363E;
+ 
+}
+.lupa input::placeholder{
+    color: #fff;
+    font-size: 16px;
+}
+
 .version,
 .languages{
     display: none;
@@ -97,6 +98,9 @@ input::placeholder{
     font-size: 14px;
         color: #fff;
         font-weight: 400;
+}
+.github{
+    display: none;
 }
 
 /***********provisorio************/
@@ -136,6 +140,15 @@ strong{
 @media(min-width:980px){
     ul li{
         padding:0 15px;
+    }
+    .logo span{
+        font-size:20px ;
+    }
+    .logo{
+        width: calc(100% / 6);
+    }
+    .github{
+        display: inline;
     }
 }
 @media(min-width:1280px){
