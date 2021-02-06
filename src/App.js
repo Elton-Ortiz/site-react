@@ -3,14 +3,12 @@ import Home   from './pages/home/home'
 import WorkProgress from './pages/workProgress/workProgress.js'
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import ProjectsMenu from './components/projects-menu/projects-menu.js';
 import PageAbout from './components/page-about/page-about.js';
 
 function App() {
   return(
     <div>
-     
-  <ProjectsMenu></ProjectsMenu>
+     sdfsdfsdf
   <PageAbout></PageAbout>
   <Header></Header>
   <Switch>
