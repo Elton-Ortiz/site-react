@@ -8,7 +8,6 @@ import PageAbout from './components/page-about/page-about.js';
 function App() {
   return(
     <div>
-     sdfsdfsdf
   <PageAbout></PageAbout>
   <Header></Header>
   <Switch>
